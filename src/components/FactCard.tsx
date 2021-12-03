@@ -11,12 +11,11 @@ margin: 5px;
 width: 250px;
 `;
 
-const FactCard = (props: Fact) => {
+export const FactCard = (props: Fact) => {
     return (
         <StylizedCard bordered={false}>
             <p>{props.text}</p>
         </StylizedCard>);
 }
 
-export default FactCard
 

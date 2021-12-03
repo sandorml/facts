@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { Button } from 'antd';
 import styled from 'styled-components';
 import { useDispatch, useSelector } from "react-redux";
-import FactCard from '../components/FactCard';
+import { FactCard } from '../components/FactCard';
 import { Fact } from '../types/Fact';
 import { getFacts } from '../store/actions';
 import { State } from '../store/reducers';
@@ -20,7 +20,7 @@ const Center = styled.div`
 `;
 
 
-const Facts = () => {
+export const Facts = () => {
     const dispatch = useDispatch();
     const facts = useSelector<State, Fact[]>((state) => state.facts);
     const fetchFacts = () => dispatch(getFacts());
@@ -39,5 +39,4 @@ const Facts = () => {
     );
 }
 
-export default Facts
 
