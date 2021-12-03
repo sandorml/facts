@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { Fact } from '../types/Fact';
 
 
-const CardP = styled(Card)`
+const StylizedCard = styled(Card)`
 box-shadow: 0px 0px 4px 0px #88888891;
 border-radius: 8px;
 margin: 5px;
@@ -13,9 +13,9 @@ width: 250px;
 
 const FactCard = (props: Fact) => {
     return (
-        <CardP bordered={false}>
+        <StylizedCard bordered={false}>
             <p>{props.text}</p>
-        </CardP>);
+        </StylizedCard>);
 }
 
 export default FactCard
