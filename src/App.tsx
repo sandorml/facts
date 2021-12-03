@@ -1,9 +1,10 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Layout from './layout/Layout';
-import Home from './pages/Home';
 import Store from './store'
+import Layout from './layout/Layout';
+import About from './pages/About';
+import Home from './pages/Home';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />} >
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<div>about</div>} />
+            <Route path="/about" element={<About/>} />
           </Route>
         </Routes>
       </BrowserRouter>
