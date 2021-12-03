@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const { Header, Content } = Layout;
 
-const ContentP = styled(Content)`
+const ContentPadding = styled(Content)`
     padding: 25px;
 `;
 
@@ -19,9 +19,9 @@ const Container = () => {
                     <Menu.Item><Link to="/about">About</Link></Menu.Item>
                 </Menu>
             </Header>
-            <ContentP>
+            <ContentPadding>
                 <Outlet />
-            </ContentP>
+            </ContentPadding>
             <BackTop />
         </Layout>
     )
