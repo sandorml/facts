@@ -11,12 +11,12 @@ margin: 5px;
 width: 250px;
 `;
 
-const Fact = (props: Fact) => {
+const FactCard = (props: Fact) => {
     return (
         <CardP bordered={false}>
             <p>{props.text}</p>
         </CardP>);
 }
 
-export default Fact
+export default FactCard
 
