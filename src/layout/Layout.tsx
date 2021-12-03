@@ -10,7 +10,7 @@ const ContentPadding = styled(Content)`
     padding: 25px;
 `;
 
-const Container = () => {
+export const Container = () => {
     return (
         <Layout >
             <Header>
@@ -26,5 +26,3 @@ const Container = () => {
         </Layout>
     )
 }
-
-export default Container;

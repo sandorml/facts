@@ -2,7 +2,7 @@ import { Divider } from 'antd'
 import React, { ReactElement } from 'react'
 
 
-function About(): ReactElement {
+export function About(): ReactElement {
     return (
         <>
             <Divider orientation="left">Source</Divider>
@@ -13,5 +13,3 @@ function About(): ReactElement {
         </>
     )
 }
-
-export default About
